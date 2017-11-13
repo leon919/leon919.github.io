@@ -34,7 +34,7 @@ h1 {
 }
 
 .middle {
-    height: 800px;
+    height: 1200px;
     width: 100%;
 }
 
@@ -52,7 +52,7 @@ h1 {
     right: 0;
     position: absolute;
     z-index: -1;
-    height: 800px;
+    height: 1200px;
 }
 
 .bottom {
