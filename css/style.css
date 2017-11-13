@@ -1,0 +1,123 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.top {
+    width: 100%;
+    background-color: #647699;
+}
+
+.header {
+    font-family: sans-serif;
+    text-align: center;
+    height: 50px;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+.nav {
+    padding-top: 20px;
+    font-size: 18;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav a:hover {
+    font-size: 20px;
+}
+
+.middle {
+    height: 800px;
+    width: 100%;
+}
+
+/* make the background picture opaque but not the entire section */
+
+.middle::after {
+    content: "";
+    background-image: url('shoppingcart.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    top: 90;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    height: 800px;
+}
+
+.bottom {
+    padding-left: 60px;
+    background-color: #96bc34;
+}
+
+
+/* Format text */
+.homecontent, .aboutcontent {
+    padding: 60px;
+}
+
+/* registration and login page */
+.login, .registrationform{
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+input[type=text], input[type=password]{
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+/* the next three style codes are designed for list items located on list page */
+li {
+   list-style: none;
+   margin-top: 10px;
+}
+
+.listcontainer {
+    display: flex;
+}
+
+
+.itemlist{
+    text-align: center;
+}
+
+/* specially reserved for the image located on the list page. */
+#listimage {
+    justify-content: center;
+    padding-top: 80px;
+    padding-left: 80px;
+    width: 300px;
+    height: 300px;
+}
+
+/* dictate positions for buttons in general */
+button {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* align text */
+p {
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
